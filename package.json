@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This website shows my academic and professional competencies and achievements including tech stacks.",
+  "homepage": "https://github.com/Oducity/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Oducity/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oducity/portfolio.git"
+  },
+  "author": "Odumamwen Evans Henry Aisiokuebor",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
