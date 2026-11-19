@@ -42,13 +42,18 @@ app.get("/fullstack-projects", (req, res) => {
 });
 
 // This route serves the certificate page
-app.get("/certificate", (req, res) => {
-  res.sendFile(path.join(__dirname, "src/views/certificate.html"));
+app.get("/certificates", (req, res) => {
+  res.sendFile(path.join(__dirname, "src/views/certificates.html"));
 });
 
-// This route serves all-projects page
-app.get("/all-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "src/views/all-projects.html"));
+// This route serves more-projects page
+app.get("/more-projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "src/views/more-projects.html"));
+});
+
+// This route serves the experience page
+app.get("/experience", (req, res) => {
+  res.sendFile(path.join(__dirname, "src/views/experience.html"));
 });
 
 // This route serves the resume page
