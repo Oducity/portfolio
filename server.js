@@ -28,22 +28,32 @@ app.get("/academic", (req, res) => {
 
 // This route serves the backend-projects page
 app.get("/backend-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "src/views/backend.html"));
+  res.sendFile(path.join(__dirname, "src/views/backend-projects.html"));
 });
 
 // This route serves the front-end projects page
 app.get("/frontend-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "src/views/frontend.html"));
+  res.sendFile(path.join(__dirname, "src/views/frontend-projects.html"));
 });
 
 // This route serves the full-stack projects page
 app.get("/fullstack-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "src/views/fullstack.html"));
+  res.sendFile(path.join(__dirname, "src/views/fullstack-projects.html"));
 });
 
 // This route serves the certificate page
 app.get("/certificate", (req, res) => {
   res.sendFile(path.join(__dirname, "src/views/certificate.html"));
+});
+
+// This route serves all-projects page
+app.get("/all-projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "src/views/all-projects.html"));
+});
+
+// This route serves the resume page
+app.get("/resume", (req, res) => {
+  res.sendFile(path.join(__dirname, "src/views/resume.html"));
 });
 
 // This route serves the contact page
