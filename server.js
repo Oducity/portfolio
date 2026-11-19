@@ -15,6 +15,41 @@ const app = express();
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, "public")));
 
+/** Define routes */
+// Serve the home.html file for the root route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "home.html"));
+});
+
+// This route serves the academic page
+app.get("/academic", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "academic.html"));
+});
+
+// This route serves the backend-projects page
+app.get("/backend-projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "backend.html"));
+});
+
+// This route serves the front-end projects page
+app.get("/frontend-projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "frontend.html"));
+});
+
+// This route serves the full-stack projects page
+app.get("/fullstack-projects", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "fullstack.html"));
+});
+
+// This route serves the certificate page
+app.get("/certificate", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "certificate.html"));
+});
+
+// This route serves the contact page
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "contact.html"));
+});
 app.listen(PORT, () => {
   console.log(`Server is running at http://127.0.0.1:${PORT}`);
   console.log(`Environment: ${NODE_ENV}`);
