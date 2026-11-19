@@ -18,37 +18,37 @@ app.use(express.static(path.join(__dirname, "public")));
 /** Define routes */
 // Serve the home.html file for the root route
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "home.html"));
+  res.sendFile(path.join(__dirname, "src/views/home.html"));
 });
 
 // This route serves the academic page
 app.get("/academic", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "academic.html"));
+  res.sendFile(path.join(__dirname, "src/views/academic.html"));
 });
 
 // This route serves the backend-projects page
 app.get("/backend-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "backend.html"));
+  res.sendFile(path.join(__dirname, "src/views/backend.html"));
 });
 
 // This route serves the front-end projects page
 app.get("/frontend-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "frontend.html"));
+  res.sendFile(path.join(__dirname, "src/views/frontend.html"));
 });
 
 // This route serves the full-stack projects page
 app.get("/fullstack-projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "fullstack.html"));
+  res.sendFile(path.join(__dirname, "src/views/fullstack.html"));
 });
 
 // This route serves the certificate page
 app.get("/certificate", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "certificate.html"));
+  res.sendFile(path.join(__dirname, "src/views/certificate.html"));
 });
 
 // This route serves the contact page
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "contact.html"));
+  res.sendFile(path.join(__dirname, "src/views/contact.html"));
 });
 app.listen(PORT, () => {
   console.log(`Server is running at http://127.0.0.1:${PORT}`);
