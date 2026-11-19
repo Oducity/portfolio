@@ -113,7 +113,7 @@ app.get("/solar-projects", (req, res) => {
 app.get("/building-construction", (req, res) => {
   const title = "Building and Construction";
   const siteTitle = "OducityTech Portfolio";
-  res.render(path.join(__dirname, "src/views/building-construction"), {
+  res.render(path.join(__dirname, "src/views/building-construction.ejs"), {
     title,
     siteTitle,
   });
