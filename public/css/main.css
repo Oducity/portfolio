@@ -212,7 +212,7 @@ main > div:first-of-type {
   display: grid;
   grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1.5fr);
   align-items: stretch;
-  gap: clamp(1.5rem, 4vw, 3.5rem);
+  gap: clamp(1.5rem, 4vw, 2.5rem);
   padding: clamp(1.25rem, 3vw, 2.5rem);
   background: var(--surface);
   border: 1px solid #d7e0ea;
@@ -221,8 +221,9 @@ main > div:first-of-type {
 }
 
 main > div:first-of-type > img {
-  width: 100%;
+  max-width: 18.6rem;
   height: 100%;
+  align-self: center;
   padding: 1.2rem;
   min-height: 20rem;
   max-height: 34rem;
@@ -380,8 +381,15 @@ body > footer > p {
     padding-block: 0.7rem;
   }
 
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
   main > div:first-of-type {
     grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
   }
 
